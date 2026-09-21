@@ -13,7 +13,6 @@ A multi-page static training site for the Clinic Coordinator role. Two objective
 | `scenarios.html` | Ten coaching scenarios plus a six-question quiz. |
 | `quick-reference.html` | Printable one-page summary. |
 | `styles.css` | Shared stylesheet for every page. |
-| `patient-flow.mp4` | The delegating-patient-flow video, embedded on the patient-flow page. |
 
 ## Hosting on GitHub Pages
 
@@ -22,23 +21,33 @@ A multi-page static training site for the Clinic Coordinator role. Two objective
 3. Under Build and deployment, set Source to "Deploy from a branch," pick your branch (usually `main`) and the `/ (root)` folder, and save.
 4. The site publishes at `https://<your-username>.github.io/<repo-name>/`.
 
-All links between pages are relative, and the video is referenced by filename, so the site works as-is once the files sit together in the repo root. No build step, no framework.
+All links between pages are relative, so the site works as-is once the files sit together in the repo root. The patient-flow video streams from Google Drive, so no large media lives in the repo. No build step, no framework.
 
-## Adding the "how to run the reports" video
+## Videos
 
-`documentation.html` has a styled placeholder for the reports walkthrough. When your video is ready:
+Videos stream from a shared Google Drive folder, so nothing heavy sits in the repo. Each video is embedded with a Drive preview iframe of the form:
 
-1. Name it `running-reports.mp4` and drop it in this folder.
-2. In `documentation.html`, find the `videoph` block under "Watch: How to run the two reports" and replace it with the commented-out `videowrap` markup that sits directly beneath it (the swap-in is already written for you, just uncomment and delete the placeholder).
+```
+https://drive.google.com/file/d/FILE_ID/preview
+```
 
-## A note on video size
+The `FILE_ID` is the long string between `/d/` and `/view` in the file's share link. For any embed to play for outside viewers, the file (or its folder) must be shared as "Anyone with the link, Viewer."
 
-`patient-flow.mp4` is about 47 MB. That is under GitHub's 100 MB per-file limit, so it will push and serve fine, but it does make the repo heavier and counts against bandwidth on a busy site. Two lighter options if you want them:
+The patient-flow video is already wired into `patient-flow.html`.
 
-- Host the video on an unlisted YouTube or Vimeo link and swap the `<video>` tag for an `<iframe>` embed.
-- Keep large media out of Git history with Git LFS.
+### Adding the "how to run the reports" video
 
-Either is optional. As delivered, the file plays directly from the repo.
+`documentation.html` has a styled placeholder for the reports walkthrough. When your video is on Drive, replace the `videoph` block under "Watch: How to run the two reports" with:
+
+```html
+<div class="videowrap">
+  <div style="position:relative;width:100%;padding-bottom:56.25%;border-radius:10px;overflow:hidden">
+    <iframe src="https://drive.google.com/file/d/YOUR_FILE_ID/preview" allow="autoplay" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;border-radius:10px"></iframe>
+  </div>
+</div>
+```
+
+Swap `YOUR_FILE_ID` for the reports video's Drive ID and delete the placeholder.
 
 ## Editing
 

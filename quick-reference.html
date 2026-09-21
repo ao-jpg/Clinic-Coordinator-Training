@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quick Reference — Clinic Coordinator Training</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .qr{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:20px}
+  .qrbox{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;box-shadow:var(--shadow)}
+  .qrbox h3{margin:0 0 10px;font-size:17px}
+  .qrbox ol,.qrbox ul{margin:0 0 0 18px;font-size:14px;color:var(--ink-soft);line-height:1.55}
+  .qrbox li{margin-bottom:5px}.qrbox li strong{color:var(--ink)}
+  .qrbox.full{grid-column:1 / -1}
+  @media(max-width:760px){.qr{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav class="topnav">
+  <div class="inner">
+    <a class="brand" href="index.html"><span class="mark">A</span><span><b>Alexandria Orthodontics</b><span>Clinic Coordinator Training</span></span></a>
+    <button class="menubtn" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+    <div class="links" id="nav">
+      <a href="index.html">Home</a>
+      <a href="patient-flow.html">Patient Flow</a>
+      <a href="preparation.html">Preparation</a>
+      <a href="documentation.html">Documentation</a>
+      <a href="scenarios.html">Scenarios</a>
+      <a href="quick-reference.html" class="active">Quick Reference</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="crumb"><a href="index.html">Home</a> / Quick Reference</div>
+    <span class="eyebrow">One Page</span>
+    <h1>Quick <em>Reference</em></h1>
+    <p class="lede">The whole role at a glance. Print it or keep it at the coordinator station.</p>
+    <div style="margin-top:18px"><button class="btn solid" onclick="window.print()">🖨 Print this page</button></div>
+  </header>
+
+  <section style="padding-top:30px">
+    <div class="banner key"><span class="bi">◆</span><div><strong>Core rule:</strong> before the coordinator leaves the patient-flow position, another available team member explicitly accepts the role. There is always one clear answer to "Who is Clinic Coordinator right now?"</div></div>
+
+    <div class="qr">
+      <div class="qrbox">
+        <h3>Coverage order</h3>
+        <ol>
+          <li>Free clinical team member</li>
+          <li>Free Lab Coordinator or lab team member</li>
+          <li>Free sterilization technician</li>
+          <li>Free front desk team member</li>
+          <li>Free Office Manager</li>
+        </ol>
+        <p style="font-size:12.5px;color:var(--ink-faint);margin:9px 0 0">The key word is available. Do not create a new gap to fill this one.</p>
+      </div>
+
+      <div class="qrbox">
+        <h3>Handoff, four steps</h3>
+        <ol>
+          <li><strong>Identify</strong> the highest available person</li>
+          <li><strong>State</strong> the transfer directly</li>
+          <li><strong>Give</strong> a brief status</li>
+          <li><strong>Get</strong> their acknowledgment before you leave</li>
+        </ol>
+        <p style="font-size:12.5px;color:var(--ink-faint);margin:9px 0 0">Hand back just as clearly when the regular coordinator returns.</p>
+      </div>
+
+      <div class="qrbox full">
+        <h3>Acting coordinator cycle</h3>
+        <div class="rhythm" style="margin:0">
+          <span>Look ahead</span><i>›</i><span>Choose location</span><i>›</i><span>Read note</span><i>›</i><span>Prepare</span><i>›</i><span>Seat</span><i>›</i><span>Yellow: Chair Occupied</span><i>›</i><span>Start note</span><i>›</i><span>Ask + document</span><i>›</i><span>Comfort</span><i>›</i><span>Return to open-bay computer</span>
+        </div>
+      </div>
+
+      <div class="qrbox">
+        <h3>Light bar priority</h3>
+        <p style="font-size:12.5px;color:var(--ink-faint);margin:0 0 8px">Worst consequence, first seen.</p>
+        <ol>
+          <li>Bondings and broken brackets</li>
+          <li>Consults</li>
+          <li>All other standard appointments</li>
+          <li>Quick checks</li>
+        </ol>
+        <p style="font-size:12.5px;color:var(--ink-faint);margin:9px 0 0">Large-block work (gingivectomy, TAD, direct bond, multiple broken brackets) can be saved for last on purpose.</p>
+      </div>
+
+      <div class="qrbox">
+        <h3>Chair rules</h3>
+        <ul>
+          <li><strong>Rooms:</strong> adults, long child appointments, TCL, special needs</li>
+          <li><strong>Chair 6:</strong> do not default just because it is open</li>
+          <li><strong>Chair 7:</strong> absolute overflow</li>
+        </ul>
+      </div>
+
+      <div class="qrbox">
+        <h3>Patient intake</h3>
+        <ul>
+          <li>Ask about loose, broken, poking, or painful issues</li>
+          <li>Document what matters in the new visit note</li>
+          <li>Communicate leave-by times early</li>
+          <li>Offer TV and make the patient comfortable</li>
+          <li>Return to the computer and ask: "Who is next?"</li>
+        </ul>
+      </div>
+
+      <div class="qrbox">
+        <h3>Five pillars of a complete note</h3>
+        <ul>
+          <li>Treatment card entry</li>
+          <li>Treatment notes</li>
+          <li>Tooth chart</li>
+          <li>Next-visit note (add NV2, NV3 where you can)</li>
+          <li>GPS note (weeks, minutes, type, special note)</li>
+        </ul>
+        <p style="font-size:12.5px;color:var(--ink-faint);margin:9px 0 0">Four out of five is incomplete. You review, the tech authors.</p>
+      </div>
+
+      <div class="qrbox full">
+        <h3>End of day: the two reports</h3>
+        <ul>
+          <li><strong>Report 1:</strong> Missing Entries. Resolve every gap.</li>
+          <li><strong>Report 2:</strong> All Appointment Entries with Next-Visit Note.</li>
+          <li>Doctor signs off on both. Print both to PDF and save to the shared folder.</li>
+          <li>Confirm the lab list is current with the full note on every case.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="pagenav">
+    <a href="scenarios.html"><span class="dir">Back</span><b>← Scenarios</b></a>
+    <a class="next" href="index.html"><span class="dir">Done</span><b>Home →</b></a>
+  </div>
+
+  <footer>
+    <b>Alexandria Orthodontics — Clinic Coordinator Training</b>
+  </footer>
+</div>
+</body>
+</html>
