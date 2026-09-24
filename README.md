@@ -12,7 +12,7 @@ A multi-page static training site for the Clinic Coordinator role. Two objective
 | `documentation.html` | Objective 2, documentation. Five pillars, direction vs shorthand, the coordinator's review role, AI scribes, and the two end-of-day reports. |
 | `scenarios.html` | Ten coaching scenarios plus a six-question quiz. |
 | `quick-reference.html` | Printable one-page summary. |
-| `styles.css` | Shared stylesheet for every page. |
+| `coordinator.css` | Shared stylesheet for every page. |
 
 ## Hosting on GitHub Pages
 
@@ -51,4 +51,4 @@ Swap `YOUR_FILE_ID` for the reports video's Drive ID and delete the placeholder.
 
 ## Editing
 
-Content is plain HTML. Shared look and feel lives in `styles.css`. Each interactive piece (the light-bar demo, the quiz) is a small inline script at the bottom of its own page, so nothing depends on an external library.
+Content is plain HTML. Shared look and feel lives in `coordinator.css`. Each interactive piece (the light-bar demo, the quiz) is a small inline script at the bottom of its own page, so nothing depends on an external library.
